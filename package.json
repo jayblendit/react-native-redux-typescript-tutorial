@@ -1,0 +1,68 @@
+{
+  "name": "Yanu-Robolab",
+  "version": "1.2.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@types/jest": "23.3.10",
+    "@types/react": "^16.5.0",
+    "@types/react-native": "^0.57.20",
+    "@types/react-native-vector-icons": "4.6.4",
+    "@types/react-navigation": "^3.0.1",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-preset-expo": "^5.0.0",
+    "babel-preset-react-native": "4.0.1",
+    "eslint": "5.11.0",
+    "husky": "1.2.1",
+    "jest": "^24.1.0",
+    "jest-expo": "31.0.0",
+    "react-test-renderer": "16.5.0",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.0",
+    "typescript": "3.2.2"
+  },
+  "main": "./AppEntry/AppEntry.js",
+  "scripts": {
+    "dev": "expo start",
+    "eject": "expo eject",
+    "jest": "node node_modules/jest/bin/jest.js",
+    "ios": "expo ios",
+    "android": "expo start android",
+    "lint": "tslint src/**/*.ts",
+    "test": "yarn jest && tslint src/**/*.tsx && eslint ."
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|expo-font|expo-asset|expo-constants|react-native-iphone-x-helper|expo-react-native-adapter|lottie-react-native|expo|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-navigation|native-base|@expo|react-native-scrollable-tab-view)/)"
+    ]
+  },
+  "dependencies": {
+    "expo": "^32.0.6",
+    "lodash": "4.17.11",
+    "native-base": "2.8.2",
+    "react": "16.5.0",
+    "react-native": "0.57.0",
+    "react-native-dropdown-menu": "^2.0.0",
+    "react-navigation": "^2.18.2",
+    "react-redux": "6.0.0",
+    "redux": "4.0.1",
+    "redux-form": "8.0.4",
+    "redux-persist": "5.10.0",
+    "redux-thunk": "2.3.0",
+    "remote-redux-devtools": "0.5.14",
+    "remote-redux-devtools-on-debugger": "^0.8.3"
+  }
+}
